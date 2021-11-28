@@ -38,8 +38,10 @@ orig_features = [
 
 target_features = orig_features[-4:]
 numerical_features = ['engaged_with_user_follower_count', 'engaged_with_user_following_count', 
-                      'engaging_user_follower_count', 'engaging_user_following_count', 'url_cnt']
-categorical_features = ['language', 'engaged_with_user_id', 'engaging_user_id']
+                      'engaging_user_follower_count', 'engaging_user_following_count', 'url_cnt',
+                      'char_cnt', 'hashtag_cnt', 'Photo_cnt', 'Video_cnt', 'GIF_cnt']
+categorical_features = ['language', 'engaged_with_user_id', 'engaging_user_id', 'tweet_type']
+
 
 
 cat_target_prod = product(categorical_features, target_features)
